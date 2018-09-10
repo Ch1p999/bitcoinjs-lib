@@ -34,14 +34,15 @@ module.exports = {
     scriptHash: 0x32,
     wif: 0xb0
   },
-  zcash10: {
-    messagePrefix: '\x18Zcash Signed Message:\n',
+  dash: {
+    messagePrefix: '\x19DarkCoin Signed Message:\n',
     bip32: {
-      public: 0x0488B21E,
-      private: 0x0488ADE4,
+      public: 0x0488b21e,
+      private: 0x0488ade4
     },
-    pubKeyHash: 0x1CB8,
-    scriptHash: 0x1CBD,
-    wif: 0x80,
+    pubKeyHash: 0x4c,
+    scriptHash: 0x10,
+    wif: 0xcc,
+    dustThreshold: 5460 // https://github.com/dashpay/dash/blob/v0.12.1.x/src/primitives/transaction.h#L144-L155
   }
 }
